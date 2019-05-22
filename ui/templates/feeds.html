@@ -3,6 +3,9 @@
             <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css"  media="screen,projection"/>
     </head>
     <body>
+        {% if error %}
+          <h3> Error : {{error}} </h3>>
+        {%endif%}
         <h2 class="center">{{title}}</h2>
         <div class="row ">
                 <div class="col s12 m2 "></div>
@@ -14,7 +17,7 @@
                     <div class="card-image" style="padding: 5px">
                       {% if i.img_src %}
                         <img src={{i.img_src}}>
-                      {%endif%}
+                      {% endif %}
                       
                     </div>
                     <div class="card-content">
