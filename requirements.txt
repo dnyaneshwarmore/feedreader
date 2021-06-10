@@ -1,4 +1,4 @@
-django == 1.11.8
+django == 2.2.24
 bs4 
 requests
 html5lib
